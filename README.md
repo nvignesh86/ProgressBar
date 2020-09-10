@@ -3,7 +3,7 @@
 
 I have deployed this progress bar demo application in netlify.com
 
-Open []() to view in browser.
+Open [https://hopeful-keller-2de83d.netlify.app/](https://hopeful-keller-2de83d.netlify.app/) to view in browser.
 
 --------------------------------------------------------------------------------------------
 
