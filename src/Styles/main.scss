@@ -1,0 +1,100 @@
+#root{
+    margin: auto;
+	width: 80%;
+	.header{
+		font-family: calibri;
+		display: flex;
+		justify-content: center;
+	}
+    .App{
+		font-family: calibri;
+		font-size:18px;
+		.loadMask{
+			min-height: 120px;
+			._loading_overlay_overlay{
+				opacity: .5;
+			}
+			
+		}
+		.placeholder{
+			font-size: 120%;
+			margin-bottom: 20px;
+		}
+		.bar-container{
+			width: 100%;
+			height: 50px;
+			position: relative;
+			background-color: #E0E0E0;
+			border-radius: 5px;
+			margin-bottom: 15px;
+			.bar-color{
+				height: 100%;
+				transition: width 0.8s;
+				border-radius: 5px;
+			}
+			.bar-text{
+				position: absolute;
+				top: 0;
+				left: 50%;
+			}
+		}
+		.button{
+			text-decoration: none;
+			padding: 10px 30px;
+			margin-left: 5px;
+			background-color: #989898;
+			color: #fff;
+			border-radius: 10px;
+            transition: background-color 0.5s;
+			border: 0px;
+			&.green{
+				background-color: #5ac57c
+			}
+			&.red{
+				background-color: #d94a7e
+			}
+		}
+		.button:hover{
+			background-color: #737373;
+			&.green{
+				background-color: #10a53f
+			}
+			&.red{
+				background-color: #d61a5f
+			}
+		}
+		select{
+			border-radius: 5px;
+			padding: 10px 30px;
+			font-size: 120%;
+		}
+	}
+}
+
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1200px) {
+	// screen still looks okay in this resolution
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+	// screen still looks okay in this resolution
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+	select{
+		display: block;
+		width: 100%;
+	}
+	.button{
+		display: block;
+		text-align: center;
+		margin-top: 10px;
+	}
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+	// screen already works from max-width adjustment. No need to change
+}
