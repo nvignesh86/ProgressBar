@@ -96,5 +96,13 @@
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
-	// screen already works from max-width adjustment. No need to change
+	select{
+		display: block;
+		width: 100%;
+	}
+	.button{
+		display: block;
+		text-align: center;
+		margin-top: 10px;
+	}
 }
